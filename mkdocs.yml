@@ -13,7 +13,6 @@ theme:
   #   code: Roboto Mono  #代码字体
   logo: img/favicon.png
   favicon: img/favicon.png
-
   palette:
     # - media: "(prefers-color-scheme)"
     #   toggle:
@@ -36,7 +35,6 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: 切换至日间模式
-
   features:
     - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
     # - navigation.instant
@@ -44,13 +42,13 @@ theme:
     - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
     - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
     # - navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
-    - navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
+    # - navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
     - navigation.top # 返回顶部的按钮 在上滑时出现
     - navigation.footer #页脚将呈现在边栏中，但在移动设备上保持原样
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
     - search.share #搜索分享按钮
-    - navigation.expand # 打开Tab时左侧目录全部展开
+    # - navigation.expand # 打开Tab时左侧目录全部展开
     - navigation.indexes #启用节索引页后，可以将文档直接附加到节
     - content.tabs.link
     - content.tooltips
@@ -69,83 +67,47 @@ repo_name: HughTaiyaki # 右上角的名字
 
 # [Navigtion]
 nav:   #目录
-  - 主页: index.md
-  - Go: blog/Go/go.md
-  - 核心知识: 
+  - 🏠 主页: index.md # 博客入口
+  - 🐭 Go学习: 
+      - 主页: blog/Go/index.md   # 默认Go主页
+      - 1.1 基础语法: blog/Go/base/a.md
+  - 💻 核心知识: 
+      - 数据结构与算法基础:
+        - 主页: blog/Algorithm/index.md   # 设置
       - 计算机网络: 
-        - 第一章: blog/Internet/a.md
-        - 第二章: blog/Internet/b.md
-  - 友链:
+        - 主页: blog/Network/index.md   # 默认计网主页
+        - 第一章: blog/Network/a.md
+        - 第二章: blog/Network/b.md
+      - 操作系统:
+        - 主页: blog/OS/index.md   # 默认数据库主页
+        - 第一章: blog/OS/a.md
+        - 第二章: blog/OS/b.md
+      - 数据库:
+        - 主页: blog/DatabaseIntro/index.md   # 默认数据库主页
+        - Mysql: blog/DatabaseIntro/a.md
+        - Redis: blog/DatabaseIntro/b.md
+  - 📦 杂项:
+      - Docker:
+        - 主页: blog/Others/Docker/index.md   # 默认杂项主页
+      - k8s:
+        - 主页: blog/Others/k8s/index.md   # 默认杂项主页
+  - 🔗 友链:
       - 友链: about/link.md
-  - 关于:
-      - About Me: about/hugh.md
+  - 😭 关于:
+      - Spin Me: about/hugh.md
       - 功能测试: about/test.md
 
 copyright: Copyright &copy; 2024 HughTaiyaki/All Rights Reserved. # 左下角的版权声明
 
 # extra:
 #   generator: true #是否删除页脚显示“使用 MkDocs 材料制造”
-#   social:
-#     - icon: fontawesome/brands/x-twitter #联系方式图标 : https://fontawesome.com/ 去这里找图标
-#       link: https://twitter.com/wcowin_
-#     - icon: fontawesome/brands/github
-#       link: https://github.com/Wcowin
+#   
+#  analytics:
+#    provider: google #谷歌分析
+#    property:
 
-#     - icon: fontawesome/regular/envelope #联系方式图标
-#       link: mailto:<wangkewen821@gmail.com> #邮件联系方式
-#     - icon: fontawesome/brands/bilibili
-#       link: https://space.bilibili.com/1407028951?spm_id_from=333.1007.0.0
-#   analytics:
-#     provider: google #谷歌分析
-#     property:
-
-#     # 网页底部反馈
-#     feedback:
-#       title: 此页面有帮助吗？
-#       ratings:
-#         - icon: material/thumb-up-outline #图标可自定义
-#           name: This page was helpful
-#           data: 1
-#           note: >-
-#             谢谢你的反馈！
-#         - icon: material/thumb-down-outline
-#           name: This page could be improved
-#           data: 0
-#           note: >-
-#             Thanks for your feedback! Help us improve this page by
-#             using our <a href="https://marketingplatform.google.com/about/analytics/" target="_blank" rel="noopener">feedback form</a>.
-#   # cookies设置（可选）
-#   # consent:
-#   #   title: Cookie consent
-#   #   description: >-
-#   #     我们也使用cookies来识别您的重复访问和偏好来衡量我们文档的有效性以及用户是否找到他们要找的东西。
-#   #     如果你同意,你可以帮助我们让我们的网站更好
-
-# plugins:
-#   - search #搜索配置
-#   - git-committers:
-#       enabled: !ENV [CI, false]
-#       repository: Wcowin/Mkdocs-Wcowin
-#       branch: main
-#       exclude:
-#         - index.md
-#         - tag.md
-#         - waline.md
-#         - blog/posts/update.md
-#         - blog/posts/wkw.md
-#         - about/link.md
-#   - git-revision-date-localized:
-#       enabled: !ENV [CI, false]
-#       type: iso_date
-#       enable_creation_date: false
-#       exclude:
-#         - index.md
-#         - tag.md
-#         - liuyanban.md
-#         - blog/posts/update.md
-#         - blog/posts/wkw.md
-#         - about/link.md
-#         - websitebeauty/linktech.md
+plugins:
+  - search #搜索配置
 #   - blog: #博客配置
 #       post_date_format: full #时间
 #       draft: true
@@ -161,72 +123,72 @@ copyright: Copyright &copy; 2024 HughTaiyaki/All Rights Reserved. # 左下角的
 #   - tags:
 #       tags_file: tag.md #分类标签
 
-# markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
-#   - abbr
-#   - attr_list
-#   - admonition
-#   - def_list
-#   - footnotes
-#   - md_in_html
-#   # - meta # 支持Markdown文件上方自定义标题标签等
-#   - pymdownx.caret
-#   - pymdownx.betterem
-#   - pymdownx.critic
-#   - pymdownx.details
-#   - pymdownx.inlinehilite
-#   - pymdownx.keys
-#   - pymdownx.mark
-#   - pymdownx.snippets
-#   - pymdownx.smartsymbols
-#   - pymdownx.tilde
+markdown_extensions: #详见https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/ 和 https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
+  - abbr
+  - attr_list
+  - admonition
+  - def_list
+  - footnotes
+  - md_in_html
+  # - meta # 支持Markdown文件上方自定义标题标签等
+  - pymdownx.caret
+  - pymdownx.betterem
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.smartsymbols
+  - pymdownx.tilde
 
-#   - pymdownx.superfences:
-#       custom_fences:
-#         - name: mermaid
-#           class: mermaid
-#           format:
-#             !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format:
+            !!python/name:pymdownx.superfences.fence_code_format # 代码块高亮插件
 
-#   - pymdownx.arithmatex: # latex支持
-#       generic: true
-#   - toc:
-#       permalink: true # 固定标题位置为当前位置
-#   - pymdownx.highlight: # 代码块高亮
-#       anchor_linenums: true
-#       linenums: true # 显示行号
-#       # auto_title: true # 显示编程语言名称
-#   - pymdownx.emoji:
-#       emoji_index: !!python/name:material.extensions.emoji.twemoji
-#       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-#   - pymdownx.tabbed:
-#       alternate_style: true
-#   - pymdownx.tasklist:
-#       custom_checkbox: true
-#   # - markdown.extensions.toc:
-#   #     slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
-#   #     permalink: "\ue157"
+  - pymdownx.arithmatex: # latex支持
+      generic: true
+  - toc:
+      permalink: true # 固定标题位置为当前位置
+  - pymdownx.highlight: # 代码块高亮
+      anchor_linenums: true
+      linenums: true # 显示行号
+      # auto_title: true # 显示编程语言名称
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - markdown.extensions.toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+      permalink: "\ue157"
 
-# extra_javascript:
-#   - javascripts/extra.js #自定义javascript
-#   - javascripts/mathjax.js #Latex支持
-#   - https://polyfill.io/v3/polyfill.min.js?features=es6 #Latex支持
-#   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js #Latex支持
-#   # - ckplayer/js/ckplayer.js #播放器配置
-#   # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js  #gitalk支持
-#   - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js #忘了
+extra_javascript:
+  - _js/extra.js #自定义javascript
+  - _js/mathjax.js #Latex支持
+  - https://polyfill.io/v3/polyfill.min.js?features=es6 #Latex支持
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js #Latex支持
+  # - ckplayer/js/ckplayer.js #播放器配置
+  # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js  #gitalk支持
+  - https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js #忘了
 
-# extra_css:
-#   - stylesheets/extra.css # 自定义CSS
-#   - stylesheets/link.css #友链配置
-#   - stylesheets/customize.css # 搜索圆角优化
+extra_css:
+  - _css/extra.css # 自定义CSS
+  - _css/link.css #友链配置
+  - _css/customize.css # 搜索圆角优化
 
-#   # - stylesheets/video.css #播放器可选配置
-#   # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css #gitalk支持
-#   # - ckplayer/css/ckplayer.css   #播放器配置
-#   - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
-#   # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css  #分享支持
+  # - stylesheets/video.css #播放器可选配置
+  # - https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css #gitalk支持
+  # - ckplayer/css/ckplayer.css   #播放器配置
+  - https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css # font-awesome表情支持
+  # - https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css  #分享支持
 
-#   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css #字体
-#   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css #字体
-#   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css  #字体
-#   # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css  #字体
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css #字体
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css #字体
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css  #字体
+  # - https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css  #字体

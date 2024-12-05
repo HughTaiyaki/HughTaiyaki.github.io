@@ -1,17 +1,31 @@
-# Welcome to MkDocs
+# 👋 欢迎！
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+!!! note "" 
+    <br><br>
+    <div align="center" style="font-size:32px;font-weight:bold">
+        ~『私は小さな猫を飼っています』~
+    </div>
+    <div align="center" style="font-size:12px">
+        上升的一切必将汇合
+    </div>
+    <br><br>
 
-## Commands
+!!! note inline end ""
+    <figure markdown align="center" style="display: inline-block; vertical-align: bottom;">
+    ![](./img/background.jpg){ width="200px"}
+    <figure>
+    
+!!! advice "核心出装"
+    - [🐭 Go学习 ｜ Golang](./blog/Go/index.md)
+    - [🗂️ 操作系统 | OS](./blog/OS/index.md)
+    - [🗂️ 计算机网络 | Computer Network](./blog/Network/index.md)
+    - [🗂️ 数据库 | Database](./blog/DatabaseIntro/index.md)
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
 
-## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+!!! info "站点统计"
+    <div align="center" style="display: inline-block; vertical-align: bottom; margin-top: 6px;">
+        <center>
+        ![:name](https://count.getloli.com/@:name)
+        </center>
+    </div>

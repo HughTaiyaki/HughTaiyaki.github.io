@@ -2,7 +2,7 @@
 .vscode
 
 # Desktop Services Store
-.DS_Store
+**/.DS_Store
 
 # Local Generation Files
-site
+site/

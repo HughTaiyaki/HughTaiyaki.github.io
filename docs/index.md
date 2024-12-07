@@ -19,7 +19,7 @@
     - [🐭 Go学习 ｜ Golang](./blog/Go/index.md)
     - [🗂️ 操作系统 | OS](./blog/OS/index.md)
     - [🗂️ 计算机网络 | Computer Network](./blog/Network/index.md)
-    - [🗂️ 数据库 | Database](./blog/DatabaseIntro/index.md)
+    - [🗂️ 数据库系统 | Database System](./blog/DatabaseIntro/index.md)
 
 
 

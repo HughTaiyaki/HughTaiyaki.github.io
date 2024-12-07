@@ -69,28 +69,32 @@ repo_name: HughTaiyaki # 右上角的名字
 nav:   #目录
   - 🏠 主页: index.md # 博客入口
   - 🐭 Go学习: 
-      - 主页: blog/Go/index.md   # 默认Go主页
+      - Go学习: blog/Go/index.md   # 默认Go主页
       - 1.1 基础语法: blog/Go/base/a.md
   - 💻 核心知识: 
       - 数据结构与算法基础:
-        - 主页: blog/Algorithm/index.md   # 设置
+        - 数据结构与算法: blog/Algorithm/index.md   # 设置
       - 计算机网络: 
         - 主页: blog/Network/index.md   # 默认计网主页
-        - 第一章: blog/Network/a.md
-        - 第二章: blog/Network/b.md
+        - Internet for kids: blog/Network/easyNet.md
       - 操作系统:
         - 主页: blog/OS/index.md   # 默认数据库主页
-        - 第一章: blog/OS/a.md
-        - 第二章: blog/OS/b.md
-      - 数据库:
+        - WebServer:
+            - 主页: blog/OS/WebServer_L/index.md 
+      - 数据库系统:
         - 主页: blog/DatabaseIntro/index.md   # 默认数据库主页
-        - Mysql: blog/DatabaseIntro/a.md
-        - Redis: blog/DatabaseIntro/b.md
+        - MySQL: 
+            - 主页: blog/DatabaseIntro/MySQL_L/index.md
+        - Redis: 
+            - 主页: blog/DatabaseIntro/Redis_L/index.md
+        - CMU15-445:
+            - 主页: blog/DatabaseIntro/CMU15-445_L/index.md
   - 📦 杂项:
       - Docker:
-        - 主页: blog/Others/Docker/index.md   # 默认杂项主页
-      - k8s:
-        - 主页: blog/Others/k8s/index.md   # 默认杂项主页
+        - Docker: blog/Others/Docker/index.md   # 默认杂项主页
+      - Kubernetes:
+        - Kubernetes (k8s): blog/Others/k8s/index.md   # 默认杂项主页
+      - Makefile: blog/Others/MakefileLearn.md
   - 🔗 友链:
       - 友链: about/link.md
   - 😭 关于:

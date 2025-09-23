@@ -8,7 +8,7 @@
   
 ### Redis
 - [x] [一小时Redis教程](https://www.bilibili.com/video/BV1Jj411D7oG)
-  
+- [ ] 《Redis深度历险：核心原理和应用实践》  
 ### CMU 15-445
 - [ ] [2023fall文档](https://15445.courses.cs.cmu.edu/fall2023/schedule.html)
 - [ ] [2023fall视频](https://www.bilibili.com/video/BV1Ex4y1p7bi)

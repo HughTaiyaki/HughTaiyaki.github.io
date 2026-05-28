@@ -3,7 +3,7 @@
 !!! note "" 
     <br><br>
     <div align="center" style="font-size:32px;font-weight:bold">
-        ~『私は小さな猫を飼っています』~
+        ~『Taiyaki's Notebook』~
     </div>
     <div align="center" style="font-size:12px">
         上升的一切必将汇合
@@ -15,17 +15,17 @@
     ![](./img/background.jpg){ width="200px"}
     <figure>
     
-!!! advice "核心出装"
+!!! advice "技术栈"
     - [🐭 Go学习 ｜ Golang](./blog/Go/index.md)
-    - [🗂️ 操作系统 | OS](./blog/OS/index.md)
-    - [🗂️ 计算机网络 | Computer Network](./blog/Network/index.md)
-    - [🗂️ 数据库系统 | Database System](./blog/DatabaseIntro/index.md)
+    - [🧩 算法刷题 ｜ Algorithm](./blog/Algorithm/index.md)
+    - [🗂️ MySQL](./blog/DatabaseIntro/MySQL_L/index.md)
+    - [🗂️ Redis](./blog/DatabaseIntro/Redis_L/index.md)
 
 
 
 !!! info "站点统计"
     <div align="center" style="display: inline-block; vertical-align: bottom; margin-top: 6px;">
         <center>
-        ![:name](https://count.getloli.com/@:name)
+        <img src="https://count.getloli.com/@HughTaiyaki-NoteBook?theme=moebooru&padding=7&darkmode=auto" alt="HughTaiyaki-NoteBook" />
         </center>
     </div>
